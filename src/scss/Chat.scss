@@ -1,0 +1,49 @@
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
+.chat {
+    width: 651px;
+    height: 757px;
+    background-image: url("../scss/background.svg");
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+    margin-top: 46px;
+    font-family: 'Roboto';
+    &__messages {
+        border-bottom: 1px solid #DBDBDB;
+        overflow-y: scroll;
+        height: 500px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__send {
+        padding: 20px;
+        height: 250px;
+    }
+    &__textarea {
+        width: 579px;
+        height: 109px;
+        border: 1px solid #DBDBDB;
+        border-radius: 4px;
+        padding: 10px;
+        &:active,
+        &:focus
+         {
+            outline: none;
+        }
+    }
+    &__button {
+        background-color: #0F54B9;
+        color: white;
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 16px;
+        box-shadow: 0px 4px 6px rgba(15, 84, 185, 0.3);
+        border-radius: 21px;
+        height: 41px;
+        width: 144px;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
+

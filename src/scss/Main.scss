@@ -1,0 +1,261 @@
+@import "./variables.scss";
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    &__header, 
+    &__footer {
+        height: 90px;
+        background-color: $grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+    &__content {
+        padding: 10px 12px;
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+        flex-grow: 1;
+    }
+    &__sections12 {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+    }
+    &__section1 {
+        display: flex;
+        gap: $gap;
+        flex-grow: 1;
+        color: white;
+    }
+    &__aside1 {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+        width: $width-block;
+    }
+    &__div11 {
+        background-color: $middle-grey;
+        flex-grow: 1;
+        aspect-ratio: 1/1;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+     }
+    &__p11 {
+        text-align: center;
+        line-height: 26px;
+        font-size: 18px;
+        position: absolute;
+        padding: 25px 30px;
+     }
+   
+    &__div12 {
+        background-color: $middle-grey;
+        flex-grow: 1;
+        @include div
+    }
+    &__div13 {
+        background-color: $middle-grey;
+        flex-grow: 1;
+        @include div
+    }
+    &__section2 {
+        display: flex;
+        gap: $gap;
+    }
+    &__article2 {
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: $gap;
+    }
+    &__aside2 {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+        width: $width-block;
+    }
+    &__div21 {
+        background-color: $light-grey;
+        height: $height-block;
+        flex-grow: 1;
+        @include div
+    }
+    &__div22 {
+        background-color: $light-grey;
+        height: $height-block;
+        flex-grow: 1;
+        @include div
+    }
+    &__div23 {
+        background-color: $light-grey;
+        height: $height-block;
+        width: 100%;
+        @include div
+    }
+    &__div24 {
+        background-color: $blue;
+        height: $height-block;
+        flex-grow: 1;
+        @include div
+    }
+    &__div25 {
+        background-color: $yelloy;
+        height: $height-block;
+        flex-grow: 1;
+        @include div
+    }
+    &__section3 {
+        display: flex;
+        gap: $gap;
+        flex-grow: 1;
+    }
+    &__aside3 {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+        width: $width-block;
+    }
+    &__div31 {
+        background-color: $green;
+        flex-grow: 1;
+        @include div
+    }
+    &__div32 {
+        background-color: $green;
+        flex-grow: 1;
+        background-image: url("../scss/image.svg");
+        background-size: 100% 100%;
+        color: white;
+        position: relative;
+        @include div;
+    }
+    &__div33 {
+        background-color: $green;
+        flex-grow: 1;
+        aspect-ratio: 1/1;
+        position: relative;
+    }
+    &__section4 {
+        display: flex;
+        gap: $gap;
+    }
+    &__aside4 {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+        width: $width-block;
+    }
+    &__article4 {
+        display: flex;
+        gap: $gap;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    &__div41 {
+        background-color: $orange;
+        height: $height-block;
+        flex-grow: 1;
+        @include div
+    }
+    &__div42 {
+        background-color: $pink;
+        height: $height-block;
+        flex-grow: 1;
+        @include div
+    }
+    &__div43 {
+        background-color: $orange;
+        height: $height-block;
+        width: 100%;
+        @include div
+    }
+    &__div44 {
+        background-color: $orange;
+        height: $height-block;
+        flex-grow: 1;
+        @include div
+    }
+    &__div45 {
+        background-color: $perple;
+        height: $height-block;
+        flex-grow: 1;
+        @include div
+    }
+}
+
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+   .main{
+    &__sections12,
+    &__section4
+     {
+        flex-direction: column-reverse;
+    }
+    &__section2 {
+        flex-direction: column;
+    }
+    &__aside2,
+    &__aside4
+    {
+        flex-direction: row;
+        width: 100%;
+    }
+    &__section3 {
+        display: none;
+    }
+    &__div21,
+    &__div22,
+    &__div24,
+    &__div25,
+    &__div41,
+    &__div42,
+    &__div44,
+    &__div45
+    {
+        aspect-ratio: 1/1; 
+        height: auto;
+        width: 30%; 
+    }
+    }
+    }
+  
+    .main__div32:hover::before {
+        content: '';
+        display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	//filter: drop-shadow(0 4px 4px rgba(0,0,0,0.25));
+    backdrop-filter: blur(4px);
+    background-color: rgba(0,0,0,0.25);
+    }
+    .main__div32:hover::after {
+        content: '!';
+        color: #F55E62;
+        font-size: 36px;
+        width:60px;
+        height: 60px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        left: 0; 
+        right: 0;
+        bottom: 0; 
+        top: 0;
+        margin: auto;
+        background-color:white;
+    }

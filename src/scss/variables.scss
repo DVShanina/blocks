@@ -1,0 +1,24 @@
+//colors
+$grey: #C4C4C4;
+$middle-grey: #A2A9B7;
+$light-grey: #E8EBED;
+$blue: #90BCE8;
+$yelloy: #FEBF26;
+$green: #E3EBD3;
+$orange: #FFAA87;
+$pink: #F55E62;
+$perple: #C7ABD4;
+
+//
+$gap: 10px;
+$width-block: 33%;
+$height-block: 155px;
+
+
+@mixin div {
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+}
+
+
