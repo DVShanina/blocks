@@ -1,12 +1,5 @@
 $grey: #F1F3F5;
 
-@mixin user {
-    display: flex;
-    align-items:flex-start;
-    gap: 15px;
-    padding: 0 20px;  
-}
-
 @mixin content {
     position: relative;
     &::before {
@@ -19,16 +12,11 @@ $grey: #F1F3F5;
     }
  }
 
-.user {
-    @include user; 
-}
-
-.user_reverse {
-    @include user; 
-    flex-direction: row-reverse;
-}
-
 .message {
+    display: flex;
+    align-items:flex-start;
+    gap: 15px;
+    padding: 0 20px; 
     &__avatar {
         position: relative;
         width: 47px;
@@ -48,13 +36,6 @@ $grey: #F1F3F5;
         left: -10px;
         }
     }
-    &__content-reverse {
-        @include content;
-        &::before {
-        border-left: 5px solid $grey; 
-        right: -10px;
-    }
-    }
     &__text {
         background: $grey;
         border-radius: 5px;
@@ -62,6 +43,19 @@ $grey: #F1F3F5;
         max-width: 460px;
         line-height: 24px;
     }  
+}
+
+.message_reverse {
+    flex-direction: row-reverse;
+}
+
+.message__content_reverse {
+    @include content;
+        &::before {
+        content: "";
+        border-left: 5px solid $grey; 
+        right: -10px;
+    }
 }
 
 .data {

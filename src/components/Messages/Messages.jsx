@@ -12,20 +12,35 @@ const messagesFilter = messages.filter(function(message) {
 return (
 <>
 {messagesFilter.map((message) => (
-    <div className="message">
-    <div className={message.user} key={message.id}>
-      
-      <div className="message__avatar">
-        <img src={message.avatar} className="message__img"></img>
-      </div>
-      
-      <div className={message.content}>
+<>
+{message.user == 1 ? (
+    <div className="message" key={message.id}>
+         <div className="message__avatar">
+           <img src={message.avatar} className="message__img"></img>
+          </div>
+     <div className="message__content">
          <div className="message__text">
-          {message.text} 
-        </div>
+            {message.text} 
+          </div>
       </div>
+    </div>
+    )
+    :
+    (
+      <div className="message message_reverse" key={message.id}>
+         <div className="message__avatar">
+           <img src={message.avatar} className="message__img"></img>
+          </div>
+     <div className="message__content_reverse">
+         <div className="message__text">
+            {message.text} 
+          </div>
       </div>
-    </div>    
+    </div>
+    )   
+} 
+  </>
+  
   ))}
   <div className="data">{data}</div>
   </>  

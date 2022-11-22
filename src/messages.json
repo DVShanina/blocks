@@ -5,8 +5,7 @@
      "text": "Это означает, что в Вашем доме, офисе, кабинете, мастерской хранятся ценности бóльшие, чем просто деньги или драгоценности, - культурные ценности. Произведения искусства, антиквариат, иные предметы коллекционирования – все это имущество, безусловно высокая стоимость которого.",
      "avatar": "/img/avatar.svg",
      "data": "21 октября",
-     "user": "user",
-     "content": "message__content"
+     "user": 1
     },
  
     {
@@ -14,8 +13,7 @@
     "text": "Это означает,",
     "avatar": "/img/avatar.svg",
     "data": "21 октября",
-    "user": "user_reverse",
-    "content": "message__content-reverse"
+    "user": 2
     },
 
     {
@@ -23,8 +21,7 @@
     "text": "доме, офисе, кабинете, мастерской",
     "avatar": "/img/avatar.svg",
     "data": "21 октября",
-    "user": "user",
-    "content": "message__content"
+    "user": 1
     },
 
     {
@@ -32,8 +29,7 @@
     "text": "Это означает,",
     "avatar": "/img/avatar.svg",
     "data": "22 октября",
-    "user": "user_reverse",
-    "content": "message__content-reverse"
+    "user": 2
     },
 
     {
@@ -41,8 +37,7 @@
     "text": "доме, офисе, кабинете, мастерской",
     "avatar": "/img/avatar.svg",
     "data": "22 октября",
-    "user": "user",
-    "content": "message__content"
+    "user": 1
     },
 
     {
@@ -50,8 +45,7 @@
     "text": "Это означает,",
     "avatar": "/img/avatar.svg",
     "data": "22 октября",
-    "user": "user_reverse",
-    "content": "message__content-reverse"
+    "user": 2
     },
 
     {
@@ -59,8 +53,7 @@
     "text": "доме, офисе, кабинете, мастерской",
     "avatar": "/img/avatar.svg",
     "data": "22 октября",
-    "user": "user",
-    "content": "message__content"
+    "user": 1
     }
 
  ]
